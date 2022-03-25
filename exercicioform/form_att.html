@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Atividade Formulário</title>
+</head>
+
+<body>
+    <h1>
+        Formulário de Inscrição de Evento
+    </h1>
+    <form>
+        <fieldset>
+            <label>Nome Completo: <input type=“text” name=“nome” tabindex="1" maxlength="30" oninvalid="alert('Preencha o campo nome');" required></label>
+            <label>E-mail<input type="email" name="email" tabindex="1" placeholder="ex: meunome@exemplo.com" required></label>
+            <label>Sexo: </label>
+                <label for="masc">Masculino</label>
+                    <input type="radio" name="sexo" value="M" id="masc" tabindex="3" required>
+                <label for="fem">Feminino</label>
+                    <input type="radio" name="sexo" value="F" id="fem" tabindex="4" required>
+            <label for="cargo">Cargo: </label>
+                <input type="text" name="cargo" id="cargo" tabindex="5" >  
+            <label for="birth">Nascimento: </label>
+                <input type="date" name="nascimento" id="birth" tabindex="6"> 
+            <label for="fone">Celular: </label>
+                <input type="tel" name="celular" id="fone" placeholder="(xx)xxxxx-xxxx" pattern="[(]{1}[0-9]{2}[)]{1}[0-9]{5}-[0-9]{4}" required tabindex="7">         
+        </fieldset>
+        <h2>
+            informações da Instituição
+        </h2>
+        <h4>
+            Preencha os campos abaixo com as informações da empresa que trabalha
+        </h4>    
+        <fieldset>
+            <label for="job">Empresa: </label>
+                <input type="text" name="empresa" maxlength="50" tabindex="8" id="job">
+            <label for="adress">Endereço: </label>
+                <input type="text" name="endereço" maxlength="50" tabindex="9" id="adress">
+            <label for="city">Cidade: </label>
+                <input type="text" name="cidade" maxlength="80" tabindex="10" id="city">
+            <label>Estado: </label>
+                <select name=“estado” tabindex="11">
+                    <option selected disabled>Selecione </option>
+                    <option value=“AC”>Acre</option>
+                    <option value=“AL”>Alagoas</option>
+                    <option value=“AP”>Amapá</option>
+                    <option value=“AM”>Amazonas</option>
+                    <option value=“BA”>Bahia</option>
+                    <option value=“CE”>Ceará</option>
+                    <option value=“ES”>Espírito Santo</option>
+                    <option value=“GO”>Goiás</option>
+                    <option value=“MA”>Maranhão</option>
+                    <option value=“MT”>Mato Grosso</option>
+                    <option value=“MS”>Mato Grosso do Sul</option>
+                    <option value=“MG”>Minas Gerais</option>
+                    <option value=“PA”>Pará</option>
+                    <option value=“PB”>Paraíba</option>
+                    <option value=“PR”>Pernambuco</option>
+                    <option value=“RJ”>Rio de Janeiro</option>
+                    <option value=“RN”>Rio Grande do Norte</option>
+                    <option value=“RS”>Rio Grande do Sul</option>
+                    <option value=“RO”>Rondônia</option>
+                    <option value=“RR”>Roraima</option>
+                    <option value=“SC”>Santa Catarina</option>
+                    <option value=“SP”>São Paulo</option>
+                    <option value=“SE”>Sergipe</option>
+                    <option value=“TO”>Tocantins</option>
+                    <option value=“RO”>Rondônia</option>
+                    <option value=“DF”>Distrito Federal</option>              
+                </select>
+            <label for="workers">Quantidade de Funcionários</label>
+                <input type="number" name="quan.trabalhador" id="workers">
+            <label for="obs">Observações: </label>
+                <textarea id="obs" name=“mensagem” rows=“400” cols=“150”></textarea>                    
+        </fieldset>    
+        <label for="recibo">Recibo: </label>
+        <input type="checkbox" name="rec"><label>Emitir em nome da instituição.</label>
+        <br>
+
+        <input type="submit" value="Fazer Inscrição">
+
+    </form>
+</body>
+</html>
