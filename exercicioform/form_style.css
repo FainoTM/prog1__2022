@@ -1,3 +1,76 @@
-input:required { 
-    border: 1px solid red;
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formu{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 15px rgba(0, 0, 0, 0.19);
+    border: 2px solid black;
+    padding: 20px;
+    width: 55%;
+}
+.required::after{
+    content: "*";
+    color: red;
+}
+
+.largu{
+    width: auto;
+}
+
+label{
+    padding-top: 5px;
+
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: auto;
+}
+
+input{
+    display: block;
+    border: groove;
+    width: 10rem;
+    margin: 0px;
+}
+
+.bottom{
+    display: block;
+    border: outset;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.centralizar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    width: auto;
+    gap: 10px;
+    justify-content: center;
+}
+textarea{
+    resize: vertical;
 }
