@@ -1,0 +1,58 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#teste{
+}
+#princ{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 320px;
+    border: 2px solid goldenrod;
+    position: absolute;
+}
+#div1{
+    background-image: url("../messicareca.jpg");
+    background-color: aqua;
+}
+#div2{
+    background-color: blue;
+}
+#div3{
+    background-color: cadetblue;
+}
+#div4{
+    background-color: rosybrown;
+}
+#header{
+    font-size: 2rem;
+    text-align: center;
+    height: 10%;
+    min-height: 50px;
+    background: linear-gradient(rgba(175, 13, 13, 0.933) rgb(219, 64, 64));
+    background-color: blue;
+}
+.interna{
+    width: 25%;
+    height: 80%;
+    padding: 0.5em;
+    border: 2px solid yellowgreen;
+    border-radius: 1.02em;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#rodape{
+    position: fixed;
+    bottom: 0px;
+    background-color: red;
+    color: blue;
+    width: 500px;
+    height: 10px;
+}
+p{
+    color: yellow;
+}

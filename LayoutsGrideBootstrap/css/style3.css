@@ -1,0 +1,20 @@
+[class*="col"]{
+    padding: 1rem;
+    background-color: rgb(101, 101, 247);
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+.side{
+    height: 100px;
+    color: black;
+    background-color: transparent;
+}
+.tamanho2{
+    height: 100px;
+}
+.tamanho{
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

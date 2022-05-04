@@ -1,0 +1,104 @@
+body{
+    background-color: aliceblue;
+}
+.item1 { 
+    grid-area: logo ;
+    column-gap: 0;
+}
+.item2 { 
+    grid-area: nav;
+}
+
+.item3 { grid-area: header;}
+
+.item4 { 
+    grid-area: ita;
+}
+.item5 { grid-area: box1;}
+
+.item6 {grid-area: box2;}
+
+.item7 {grid-area: box3;}
+
+.item8 { grid-area: footer;}
+
+@media screen {
+    .grid-container{
+        grid-template-areas:
+            'logo    logo    logo     logo   logo logo'
+            'nav      nav      nav   nav nav   nav'
+            'header  header  header   header   header   header '
+            'ita     ita     ita      ita      ita      ita'
+            'box1    box1    box1     box1     box1     box1'
+            'box2    box2    box2     box2     box2     box2'
+            'box3    box3    box3     box3     box3     box3'
+            'footer  footer  footer   footer   footer   footer'      
+            ; 
+    }
+
+    
+}
+
+@media screen and (min-width:720px){
+    .grid-container{
+        grid-template-areas:
+            'logo    logo    logo     logo   logo logo'
+            'nav      nav      nav   nav     nav  nav'
+            'header  header  header   header   header   header '
+            'ita     ita     ita      ita      ita      ita'
+            'box1    box1    box1     box2     box2     box2'
+            'box3    box3    box3     box3     box3     box3'
+            'footer  footer  footer   footer   footer   footer'      
+            ; 
+    }
+}
+
+
+@media screen and (min-width:960px){
+    .grid-container{
+        grid-template-areas:
+            'logo    logo    logo     nav      nav      nav '
+            'header  header  header   header   header   header '
+            'ita     ita     ita      ita      ita      ita'
+            'box1    box1    box2     box2     box3     box3'
+            'footer  footer  footer   footer   footer   footer'      
+            ; 
+    }
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  column-gap: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.grid-container  div {
+  background-color: rgb(153, 149, 149);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container .item2{
+    font-size: 30px;
+}
+.grid-container .item1{
+    text-align: left;
+    font-size: 35px;
+}
+
+.item5,.item6,.item7{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#centr{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.gambiarra{
+    margin-left: -10px;
+}
