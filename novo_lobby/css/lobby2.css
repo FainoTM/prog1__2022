@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagem/preto.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 20px;
+    padding-left: 2%;
+    vertical-align: center;
+}
+@media only screen and (min-width: 600px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 45px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .centro{
+        margin-left: 325px;
+    }    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+   
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+   
+}
+span{
+    color: #970724;
+}
+nav ul li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 35px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+ 
+}
+
+nav ul li a:hover{
+	color: #5e0013;
+	transition: .4s;
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+    color: whitesmoke;
+    margin: 20px 0px 20px;
+	font-size: 40px;
+}
+
+h3{
+    color: whitesmoke;
+    font-size: 35px;
+}
+h4{
+    color: white;
+}
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #25201e;
+
+}
+.about img{
+	height: auto;
+    position: relative;
+	width: 250px;
+}
+.imagem-cent{
+    text-align: center;
+}
+
+.about-text{
+	width: auto;
+}
+.main{
+	width: auto;
+	max-width: 95%;
+	margin: 0 auto;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h3{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+    margin-top: 30px;
+    text-align: center;
+	text-transform: capitalize;
+}
+.about-text h4{
+    text-align: center;
+    margin-bottom: 0px;
+}
+#campus{
+    margin-bottom: 80px;
+}
+.about-text p, th, td{
+	color: rgba(253, 255, 255, 0.993);
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.atividades{
+    width: 100%;
+	padding: 50px 0px;
+    background-image: url(../imagem/preto.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.atividades h3{
+    text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+
+}
+.card{
+	height: 365px;
+	width: 300px;
+	padding: 10px 10px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+@media only screen and (min-width: 1000px){
+    .teste{
+        display: flex;
+	    justify-content: center;
+    	align-items: center;
+    	min-height: 400px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 50px;
+    }
+}
+.card p{
+    background-color: #191919;
+    color: aliceblue;
+}
+.card img{
+    width: 320px;
+    height: 250px;
+    position: absolute;
+    top: 50px;
+    right: 0.01px;
+}
+
+.card div img{
+    width: 250px;
+    display: block;
+    margin-right: 25px;
+}
+.escondido{
+    display: none;
+}
+.card div a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.exercises{
+    background-color: #110000e7;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.a{
+    margin-top: 20px;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer img{
+    margin-top: 30px;
+    width: 35px;
+    margin-left: 50px;
+}
+footer a{
+    margin-right: 35px;
+}
+
+h5{
+    text-align: top;
+    color: antiquewhite;
+}
+

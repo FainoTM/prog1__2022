@@ -1,0 +1,103 @@
+.bg{
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-beautiful-green-football-field-picture-image_652365.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.imagem1 img {
+    max-width: 450px;
+    margin-left: 60px;
+
+}
+
+.imagem2 img {
+    max-width: 450px;
+    margin-left: 60px;
+
+}
+
+.imagem3 img {
+    max-width: 480px;
+    margin-left: 60px;
+
+}
+
+
+ .grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1px;
+    background-color: black;
+    padding: 2px;
+    height: 80px;
+    width: 500px; 
+    margin-left: 50%;
+    margin-top: -130%;
+}
+  
+.grid-container1 > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+    
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1px;
+    background-color: black;
+    padding: 2px;
+    height: 80px;
+    width: 500px; 
+    margin-left: 50%;
+    margin-top: 38%;
+}
+  
+.grid-container2 > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+    
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1px;
+    background-color: black;
+    padding: 2px;
+    height: 80px;
+    width: 500px; 
+    margin-left: 50%;
+    margin-top: 32%;
+}
+  
+.grid-container3 > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+    
+}
+.quad3s{
+    padding-bottom: 100px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    left: 870px;
+    
+
+}

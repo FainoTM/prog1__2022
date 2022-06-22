@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Custo gasolina</title>
+</head>
+<body> 
+    <div class="p-3 mb-2 bg-warning text-black text-center">
+        Calculadora Opções
+    </div>
+    <div class="text-center">
+        <div class="ml-4 mt-3 ">
+            <label for="tanque">Capacidade do tanque de gasolina : </label>
+            <input type="number" name="tanque" id="tanque" class="rounded"><br><br>   
+        </div>
+        <div class="ml-4 mt-3">
+            <label for="valor">Valor que tem para gastar: </label>
+            <input type="number" name="valor" id="valor" class="rounded"><br><br>   
+        </div>
+    
+        <div class="ml-5">
+            <input type="radio" name="combustivel" id="comb" value="alcool">
+            <label for="alcool">Álcool</label>
+            <input type="radio" name="combustivel" id="comb2" value="gasolina" class="ml-4">
+            <label for="gas">Gasolina</label><br><br>
+
+
+
+            <button id="calcular" class="bg-success rounded ">Calcular</button>
+            <button id="novo" class="bg-warning rounded ml-5">Novo</button>
+            <div class="mt-5">
+                <p><span id="resultado"></span></p>
+            </div>
+    </div>
+    <script src="../scrpt/custo.js"></script>
+</body>
+</html>

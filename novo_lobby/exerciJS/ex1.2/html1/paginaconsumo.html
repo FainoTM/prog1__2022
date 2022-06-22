@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>pagina vendas</title>
+</head>
+<body>
+    <div class="p-3 mb-2 bg-info text-white text-center">
+        Calculadora gasolina
+    </div>
+    <div class="ml-4 mt-3">
+        <label for="km">Km: </label>
+        <input type="number" name="kilometro" id="km"><br><br>   
+    </div>
+    <div class="ml-5">
+        <label for="car">Tipos de carro</label>   
+        <select name="carros" id="car">
+            <option value="standard" disabled selected>Escolha um carro</option>
+            <option value="carA">Carro A</option>
+            <option value="carB">Carro B</option>
+            <option value="carC">Carro C</option>
+        </select><br><br> 
+        <input type="checkbox" name="ac" id="ac"> 
+        <label for="ac">Ar-condicionado</label><br><br>  
+
+        <button id="calcular" class="bg-success rounded ">Calcular</button>
+        <button id="clear" class="bg-warning rounded ml-5">Limpar</button>
+        <div class="mt-5">
+            <p id="resultado" class=""></p>
+        </div>
+    </div>
+	<a href="../../../html/inicial.html"><button class='bg-info rounded'>Voltar à página inicial</button></a>    
+
+
+
+
+    <script src="../script1/scriptconsumo.js"></script>
+</body>
+
+</html>
